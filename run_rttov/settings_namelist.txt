@@ -1,0 +1,15 @@
+# -------------------------------------------------------------------------------------------
+Sandy created Settings_list.txt to describe the default values in the settings_dict dictionary, which serves as a namelist of configurable options for RTTOV simulations.
+
+To-do:
+- Update Settings_list.txt to include any new options added to settings_dict, following the file’s established format.
+# -------------------------------------------------------------------------------------------
+
+Default settings          , Description 
+
+"snow2ice": 0             , fraction of snow to add to ice mixing ratio [Kg/Kg]
+"lwc": 1                  , use water clouds (if 0 it will set water effective radii and water clouds to zero)
+"NC": 2.0e+8              , Total droplet concetration parameter used to derive water effective radius following (Martin et al, 1994)
+'clw_scheme'              , Water clouds scheme in RTTOV, Default =1 (use Deff scheme), else 0 (use OPAC scheme)
+'fixed_time'              , Run RTTOV for a specific time, default = None (# aims to use the atmospheric output fields at different hours of the day)
+'cte_hour'                , Run RTTOV for a specific hour, default = None (similar to above)

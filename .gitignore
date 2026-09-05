@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+__pycache__/
+.ipynb_checkpoints/
+* .swp
+temp_plots/
+=======
+# Ignore the ipython notebook tmp files and the pyc files
+__pycache__/
+.ipynb_checkpoints/
+*.swp
+figs/
+>>>>>>> master
