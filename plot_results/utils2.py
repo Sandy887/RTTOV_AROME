@@ -149,7 +149,7 @@ def retrieve_stds_from_binned_Ca(X: np.array, df: pd.DataFrame, namelist: list, 
 
     return np.array(Y, dtype=np.float64)
 
-def plot_2d_hist_grid(data, row_vars=None, col_vars=None, bins=50,ymin=0,ymax=1.2, cmap='viridis', norm=None, fontsize=18,figsize=(8, 6), save=None, out_path="/home/km4c/to_ucloud/", name=None):
+def plot_2d_hist_grid(data, row_vars=None, col_vars=None, bins=50,ymin=0,ymax=1.2, cmap='viridis', norm=None, fontsize=18,figsize=(8, 6), save=None, out_path="/path/to/to_ucloud/", name=None):
     """
     Plots a grid of 2D histograms.
 

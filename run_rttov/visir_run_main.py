@@ -17,8 +17,8 @@ from datetime import datetime
 # ----------------------------------------------------------------------------
 # Constants & Switching versions
 # ----------------------------------------------------------------------------
-LOG_PATH = Path('/perm/km4c/log/experiments_log_visible.txt')
-COUNT_FILE = Path('/perm/km4c/log/count_rttov132.text') # count_rttov132 / count_rttov122
+LOG_PATH = Path('/path/to/log/experiments_log_visible.txt')
+COUNT_FILE = Path('/path/to/log/count_rttov132.text') # count_rttov132 / count_rttov122
 
 # Configure operator
 # 1. change COUNT_FILE (line 24)
@@ -54,7 +54,7 @@ def main():
     # Build dictionaries for dates and hours
     date_dict = {
         f"Day {i}": {
-            'path_to_file': f"/hpcperm/km4c/arome_forecasts/august23/day_{i:02}/",
+            'path_to_file': f"/path/to/arome_forecasts/august23/day_{i:02}/",
             'file_name': f"/202308{i:02}_09_0003.grb",
             'year': 2023,
             'month': 8,
@@ -65,7 +65,7 @@ def main():
 
     time_dict = {
         f"{hour}UTC": {
-            'path_to_file': "/ec/res4/scratch/km4c/grbs_tmp/may23/day_08/",
+            'path_to_file': "/path/to/grbs_tmp/may23/day_08/",
             'file_name': f"/20230508_09_000{idx}.grb",
             'year': 2023,
             'month': 5,
@@ -85,7 +85,7 @@ def main():
         rttov_op="v132",
         channel='visible',
         settings=settings,
-        output_root = '/ec/res4/scratch/km4c/ml_simulations'
+        output_root = '/path/to/ml_simulations'
     )
     elapsed = datetime.now() - start_time
     logging.info(f"Total runtime: {elapsed}")

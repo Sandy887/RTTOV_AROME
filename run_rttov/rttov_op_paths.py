@@ -17,6 +17,6 @@ Notes:
 
 # Set up the path to python library and rttov versions
 python = "/usr/local/apps/python3/3.8.8-01/bin/python3"
-RTTOV = "/home/km4c/rttov122_arome_offline/" # Default one
-RTTOV132 = "/etc/ecmwf/perm/km4c/rttov-13.2/"
+RTTOV = "/path/to/rttov122_arome_offline/" # Default one
+RTTOV132 = "/path/to/rttov-13.2/"
 python_packages = "/usr/local/apps/python3/3.8.8-01/lib/python3.8/site-packages"

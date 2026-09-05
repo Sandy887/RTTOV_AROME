@@ -19,8 +19,8 @@ import warnings, sys
 warnings.filterwarnings('ignore')
 from class_reflectance_out import *
 
-paths_1 = "/hpcperm/km4c/experiment_results" #"/etc/ecmwf/scratch/km4c/ml_simulations/visible/"
-paths_2 = paths_1 #"/etc/ecmwf/scratch/km4c/visop_runs/summer_period/"
+paths_1 = "/path/to/experiment_results"
+paths_2 = paths_1 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # Class objects for operators versions

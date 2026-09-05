@@ -128,7 +128,7 @@ def map_to_sat_grid_edited(reflectance_sd, channel='', varname='refl', plot_only
 
     #elif args.gridtype == 'lamcoco' : # Arome
      if True:
-         sys.path.append("/etc/ecmwf/nfs/dh2_perm_b/km4c/visop_operator/vis_op/")
+         sys.path.append("/path/to/visop_operator/vis_op/")
 
          from vo2_utilities import print_dict, changes_with_dim
 

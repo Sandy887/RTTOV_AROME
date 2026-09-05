@@ -18,20 +18,20 @@ Contributions:
 
 import sys
 # Paths to change
-sys.path.append("/perm/km4c/RTTOV_AROME/")
-#sys.path.append("/perm/km4c/RTTOV_AROME/visualize_results-visible/")
-sys.path.append("/etc/ecmwf/nfs/dh2_home_b/km4c/.local/lib/python3.8/site-packages")
+sys.path.append("/path/to/RTTOV_AROME/")
+#sys.path.append("/path/to/RTTOV_AROME/visualize_results-visible/")
+sys.path.append("/path/to/.local/lib/python3.8/site-packages")
 
 import xarray as xr
 import numpy as np
 from class_reflectance_out import *
 
 
-M1 = np.load("/perm/km4c/RTTOV_AROME/masks/AROME_Mask.npy") # 
-M = np.load("/perm/km4c/RTTOV_AROME/masks/clr_sky_filter.npy")
+M1 = np.load("/path/to/RTTOV_AROME/masks/AROME_Mask.npy") # 
+M = np.load("/path/to/RTTOV_AROME/masks/clr_sky_filter.npy")
 
-paths_1 = "/hpcperm/km4c/experiment_results" #"/etc/ecmwf/scratch/km4c/ml_simulations/visible/"
-paths_2 = "/etc/ecmwf/scratch/km4c/ml_simulations/visible/Results_tmp_all_datetimes"  #"/etc/ecmwf/scratch/km4c/visop_runs/summer_period/"
+paths_1 = "/path/to/experiment_results"
+paths_2 = "/path/to/ml_simulations/visible/Results_tmp_all_datetimes"
 
 
 visop = {'default':{}, 'v1':{}, 'v2':{}, 'v3':{}, 'v4':{}}

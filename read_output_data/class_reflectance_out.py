@@ -1,7 +1,7 @@
 """
 Author
 ------
-Ms. Sandy Chkeir  |  km4c@lfcm‑077  |  sandychkeir96@gmail.com
+Ms. Sandy Chkeir  |  sandychkeir96@gmail.com
 
 Contributions:
 - Created in mid 2024
@@ -32,7 +32,7 @@ Data input summary
 |                      | • only `"rttov122"` supports `albedo_atlas` and angle extraction                                                          |
 | Datetime formatting  | • Format: `YYYYMMDD_HHMMSS` (e.g. `20230817_120000`)                                                                      |
 |                      | • Note: `20230817_180000` is skipped due to missing data                                                                  |
-| Mask file            | • Path: `/perm/km4c/RTTOV_AROME/Masks_visible/clr_sky_filter.npy`                                                         |
+| Mask file            | • Path: `/path/to/RTTOV_AROME/Masks_visible/clr_sky_filter.npy`                                                         |
 |                      | • Must exist and match the spatial dimensions of your dataset                                                             |
 | Path handling        | • Provide `dirpath` and `filepath` separately (or use `pathlib.Path`)                                                     |
 |                      | • They're concatenated to locate the NetCDF file for xarray                                                               |
@@ -174,7 +174,7 @@ class reflectance_out:
         all_sky_ref_period: Optional[List[str]] = None,
         albedo: bool = False,
         angle: bool = False,
-        mask_path = Path("/perm/km4c/RTTOV_AROME/masks/clr_sky_filter.npy")
+        mask_path = Path("/path/to/RTTOV_AROME/masks/clr_sky_filter.npy")
     ):
         """
         Load dataset and precompute observed/synthetic reflectances.

@@ -52,7 +52,7 @@ class RadiativeTransfer():
 
         self.pyrttov_lib = pyrttov
 
-def sim_setup_visible(exp_name, rttov_op = 'v122',settings_dict={"clw_scheme":2}, satellite = "SEVIRI MSG-3", chan_list = (1,), chan_names = ('VIS06'), atlas_dir = '/perm/km4c/rttov-13.2/'):
+def sim_setup_visible(exp_name, rttov_op = 'v122',settings_dict={"clw_scheme":2}, satellite = "SEVIRI MSG-3", chan_list = (1,), chan_names = ('VIS06'), atlas_dir = '/path/to/rttov-13.2/'):
     """
     RTTOV Guide comments:
     
@@ -326,7 +326,7 @@ def update_surface_emissivity(
 
     return surfemisrefl_seviri
 
-def sim_setup_infrared(exp_name, satellite = "SEVIRI MSG-3", atlas_dir = '/perm/km4c/rttov-13.2/'):
+def sim_setup_infrared(exp_name, satellite = "SEVIRI MSG-3", atlas_dir = '/path/to/rttov-13.2/'):
     """
     SC-comments:
     Similar to the visible setup but for IR instead. Currently configured for rttov 12.2

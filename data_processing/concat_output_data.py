@@ -98,5 +98,5 @@ def concatenate_netcdf_outputs(out_path, in_path, var_coordinate, op_version):
      print(f"The data are concatenated over {var_coordinate} dimension. It tooks ", dt.now() - startTime)
 
 # To change this
-concatenate_netcdf_outputs(out_path="/ec/res4/scratch/km4c/ml_simulations/visible/Results_tmp_all_datetimes", in_path= "/etc/ecmwf/scratch/km4c/ml_simulations/visible/rttov_v132_v1.2/",var_coordinate='datetimes', op_version='v132')
+concatenate_netcdf_outputs(out_path="/path/to//ml_simulations/visible/Results_tmp_all_datetimes", in_path= "/path/to/ml_simulations/visible/rttov_v132_v1.2/",var_coordinate='datetimes', op_version='v132')
 

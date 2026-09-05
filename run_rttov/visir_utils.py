@@ -16,7 +16,7 @@ from visir_rttov_switches import *
 from visir_profiles_arome import *
 
 # Constants for repository path, if needed
-REPO_PATH = Path('/perm/km4c/')
+REPO_PATH = Path('/path/to/repo/')
 
 
 def load_grib(file_path: Path) -> list:

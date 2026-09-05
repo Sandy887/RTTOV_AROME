@@ -27,7 +27,6 @@ warnings.filterwarnings("ignore")
 
 
 # Path to the zip file containing HRIT data
-#directory = '/etc/ecmwf/scratch/km4c/test_45/'
 
 # print('Step 1: Start the extraction of compressed HRIT files')
 # files = os.listdir(directory)
@@ -43,7 +42,7 @@ warnings.filterwarnings("ignore")
     
 #     # Path to the directory where you want to extract the contents
 #     # extracted_dir = zip_file_path + 'ext_obs_' + current_yyyy_mm_dd + '/' + time_slot[idx] + '/'
-#     destination = '/etc/ecmwf/scratch/km4c/obs_archive'
+#     destination = '/path/to/obs_archive'
 #     extracted_dir = f'{destination}/ext_obs_{year}{month}{day}/{hour}{minute}/'
     
 #     if not os.path.exists(extracted_dir):
@@ -142,7 +141,7 @@ for day in days:
         
             # Save the xarray Dataset to a NetCDF file
             name = f'{year}{month}{day}{hour}'
-            # filename = '/etc/ecmwf/perm/km4c/seviri_obs_dat/masked_obs/monitoring_obs/'+str(name)+'.nc'
+            # filename = '/path/to/seviri_obs_dat/masked_obs/monitoring_obs/'+str(name)+'.nc'
             filename = '/etc/ecmwf/scratch/kaan/obs_archive/'+str(name)+'.nc'
         
             if os.path.exists(filename):
